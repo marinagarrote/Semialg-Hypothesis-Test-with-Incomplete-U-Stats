@@ -11,6 +11,11 @@ This repository includes code implemented in R, C++ and Macaulay2.
 
 ## Code for hypothesis testing with incomplete U-statistics:
 The code is based on the following files:
+
+- **[`src/SDL-test.R`](src/SDL-test.R)**  
+  Contains the main high-level function `test_U_stat`, which runs the SDL test.  
+  └ **[`SDL-test_functions.cpp`](SDL-test_functions.cpp)**: Additional C++ functions for implementing the SDL test.
+
 * _src/SDL-test.R_
 * _src/SDL-test_functions.cpp_
 * _src/data_plots_functions.R_
