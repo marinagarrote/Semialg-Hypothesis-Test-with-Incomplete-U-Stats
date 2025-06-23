@@ -1,6 +1,6 @@
-# Semialgebraic Hypothesis Testing with Incomplete U-Statistics: Practical Issues
+# Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics
 
-V.1.0 Update: Apr/2025
+V.1.0 Update: July/2025
 
 This repository contains code implementing methods described in the paper "Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics" (available at ...).
 
@@ -26,6 +26,7 @@ The code is based on the following files:
 - **[`src/plot_examles.R`](src/run-CFN-experiment.R)**
   Code for ploting ....
   └ **[`src/plot_utils.R`](src/CFN-model_utils.R)**: Additional functions for plotting.
+  └ CFN data in **[`data/big_simulation_CFN.R`](data/big_simulation_CFN)**: Data...
 
 
 
@@ -33,5 +34,9 @@ The code is based on the following files:
 * [`singular_locus_CFN.m2`](singular_locus_CFN.m2) This file can be used to compute the singular locus of the CFN model on a 4-leaf binary tree.
 * [`generating_sets_CFN.m2`](generating_sets_CFN.m2) This file contains the code presented in Appendix C.1, used to compute the 5 different constrain sets (CDD, CDM, PDM, CDR and PDR) used thoughout the paper.
 * [`list_constraints_3topologies_CFN.m2`](list_constraints_3topologies.m2) List of invariants for the CFN model on the 3 tree topologies of 4-leaf binary trees.
+_Combine the last 2 files_
 
-* <span style="color:red">*To discuss: Add docs/TestModels.pdf? or similar R code?*</span>.
+
+
+
+<span style="color:red">*To discuss: Add docs/TestModels.pdf? or similar R code?*</span>.
