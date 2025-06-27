@@ -45,14 +45,14 @@ Sp = QQ[pxxxx, pxxxy, pxxyx, pxxyy, pxyxx, pxyxy, pxyyx, pxyyy];
 
 -- Define the parametrization for the symmetrized pattern probabilities (p̄)
 -- for the CFN model on the tree T = T₁₂₋₃₄.
-Pxxxx = α(θ1)*α(θ2)*α(θ3)*α(θ4)*α(θ5) + α(θ1)*α(θ2)*β(θ3)*β(θ4)*β(θ5) + α(θ3)*α(θ4)*β(θ1)*β(θ2)*β(θ5) + α(θ5)*β(θ1)*β(θ2)*β(θ3)*β(θ4); -- p0000 + p1111
-Pxxxy = α(θ1)*α(θ2)*α(θ3)*α(θ5)*β(θ4) + α(θ1)*α(θ2)*α(θ4)*β(θ3)*β(θ5) + α(θ3)*β(θ1)*β(θ2)*β(θ4)*β(θ5) + α(θ4)*α(θ5)*β(θ1)*β(θ2)*β(θ3); -- p0001 + p1110
-Pxxyx = α(θ1)*α(θ2)*α(θ3)*β(θ4)*β(θ5) + α(θ1)*α(θ2)*α(θ4)*α(θ5)*β(θ3) + α(θ3)*α(θ5)*β(θ1)*β(θ2)*β(θ4) + α(θ4)*β(θ1)*β(θ2)*β(θ3)*β(θ5); -- p0010 + p1101
-Pxxyy = α(θ1)*α(θ2)*α(θ3)*α(θ4)*β(θ5) + α(θ1)*α(θ2)*α(θ5)*β(θ3)*β(θ4) + α(θ3)*α(θ4)*α(θ5)*β(θ1)*β(θ2) + β(θ1)*β(θ2)*β(θ3)*β(θ4)*β(θ5); -- p0011 + p1100
-Pxyxx = α(θ1)*α(θ3)*α(θ4)*α(θ5)*β(θ2) + α(θ1)*β(θ2)*β(θ3)*β(θ4)*β(θ5) + α(θ2)*α(θ3)*α(θ4)*β(θ1)*β(θ5) + α(θ2)*α(θ5)*β(θ1)*β(θ3)*β(θ4); -- p0100 + p1011
-Pxyxy = α(θ1)*α(θ3)*α(θ5)*β(θ2)*β(θ4) + α(θ1)*α(θ4)*β(θ2)*β(θ3)*β(θ5) + α(θ2)*α(θ3)*β(θ1)*β(θ4)*β(θ5) + α(θ2)*α(θ4)*α(θ5)*β(θ1)*β(θ3); -- p0101 + p1010
-Pxyyx = α(θ1)*α(θ3)*β(θ2)*β(θ4)*β(θ5) + α(θ1)*α(θ4)*α(θ5)*β(θ2)*β(θ3) + α(θ2)*α(θ3)*α(θ5)*β(θ1)*β(θ4) + α(θ2)*α(θ4)*β(θ1)*β(θ3)*β(θ5); -- p0110 + p1001
-Pxyyy = α(θ1)*α(θ3)*α(θ4)*β(θ2)*β(θ5) + α(θ1)*α(θ5)*β(θ2)*β(θ3)*β(θ4) + α(θ2)*α(θ3)*α(θ4)*α(θ5)*β(θ1) + α(θ2)*β(θ1)*β(θ3)*β(θ4)*β(θ5); -- p0111 + p1000
+Pxxxx = α(θ1)*α(θ2)*α(θ3)*α(θ4)*α(θ5) + α(θ1)*α(θ2)*β(θ3)*β(θ4)*β(θ5) + β(θ1)*β(θ2)*α(θ3)*α(θ4)*β(θ5) + β(θ1)*β(θ2)*β(θ3)*β(θ4)*α(θ5); -- p0000 + p1111
+Pxxxy = α(θ1)*α(θ2)*α(θ3)*β(θ4)*α(θ5) + α(θ1)*α(θ2)*β(θ3)*α(θ4)*β(θ5) + β(θ1)*β(θ2)*α(θ3)*β(θ4)*β(θ5) + β(θ1)*β(θ2)*β(θ3)*α(θ4)*α(θ5); -- p0001 + p1110
+Pxxyx = α(θ1)*α(θ2)*α(θ3)*β(θ4)*β(θ5) + α(θ1)*α(θ2)*β(θ3)*α(θ4)*α(θ5) + β(θ1)*β(θ2)*α(θ3)*β(θ4)*α(θ5) + β(θ1)*β(θ2)*β(θ3)*α(θ4)*β(θ5); -- p0010 + p1101
+Pxxyy = α(θ1)*α(θ2)*α(θ3)*α(θ4)*β(θ5) + α(θ1)*α(θ2)*β(θ3)*β(θ4)*α(θ5) + β(θ1)*β(θ2)*α(θ3)*α(θ4)*α(θ5) + β(θ1)*β(θ2)*β(θ3)*β(θ4)*β(θ5); -- p0011 + p1100
+Pxyxx = α(θ1)*β(θ2)*α(θ3)*α(θ4)*α(θ5) + α(θ1)*β(θ2)*β(θ3)*β(θ4)*β(θ5) + β(θ1)*α(θ2)*α(θ3)*α(θ4)*β(θ5) + β(θ1)*α(θ2)*β(θ3)*β(θ4)*α(θ5); -- p0100 + p1011
+Pxyxy = α(θ1)*β(θ2)*α(θ3)*β(θ4)*α(θ5) + α(θ1)*β(θ2)*β(θ3)*α(θ4)*β(θ5) + β(θ1)*α(θ2)*α(θ3)*β(θ4)*β(θ5) + β(θ1)*α(θ2)*β(θ3)*α(θ4)*α(θ5); -- p0101 + p1010
+Pxyyx = α(θ1)*β(θ2)*α(θ3)*β(θ4)*β(θ5) + α(θ1)*β(θ2)*β(θ3)*α(θ4)*α(θ5) + β(θ1)*α(θ2)*α(θ3)*β(θ4)*α(θ5) + β(θ1)*α(θ2)*β(θ3)*α(θ4)*β(θ5); -- p0110 + p1001
+Pxyyy = α(θ1)*β(θ2)*α(θ3)*α(θ4)*β(θ5) + α(θ1)*β(θ2)*β(θ3)*β(θ4)*α(θ5) + β(θ1)*α(θ2)*α(θ3)*α(θ4)*α(θ5) + β(θ1)*α(θ2)*β(θ3)*β(θ4)*β(θ5); -- p0111 + p1000
 
 -- A list containing all the parametrization polynomials.
 P = {Pxxxx, Pxxxy, Pxxyx, Pxxyy, Pxyxx, Pxyxy, Pxyyx, Pxyyy};
@@ -116,15 +116,15 @@ F2 = det(M2)
 CDD = ideal{F1, F2}
 
 -- --- Optional: Verification of the Determinantal Equations ---
--- Sq = QQ[qxxxx, qxxyy, qxyxy, qxyyx, qyxxy, qyxyx, qyyxx, qyyyy];
--- Qxxxx = Pxxxx + Pxxxy + Pxxyx + Pxxyy + Pxyxx + Pxyxy + Pxyyx + Pxyyy
--- Qxxyy = Pxxxx - pxxxy - pxxyx + Pxxyy + Pxyxx - pxyxy - pxyyx + Pxyyy
--- Qxyxy = Pxxxx - pxxxy + pxxyx - Pxxyy - Pxyxx + pxyxy - pxyyx + Pxyyy
--- Qxyyx = Pxxxx + pxxxy - pxxyx - Pxxyy - Pxyxx - pxyxy + pxyyx + Pxyyy
--- Qyxxy = Pxxxx - pxxxy + pxxyx - Pxxyy + Pxyxx - pxyxy + pxyyx - Pxyyy
--- Qyxyx = Pxxxx + pxxxy - pxxyx - Pxxyy + Pxyxx + pxyxy - pxyyx - Pxyyy
--- Qyyxx = Pxxxx + pxxxy + pxxyx + pxxyy - pxyxx - pxyxy - pxyyx - pxyyy
--- Qyyyy = Pxxxx - pxxxy - pxxyx + pxxyy - pxyxx + pxyxy + pxyyx - pxyyy
+-- Sq = QQ[qqxxxx, qqxxyy, qqxyxy, qqxyyx, qqyxxy, qqyxyx, qqyyxx, qqyyyy];
+-- Qxxxx = Pxxxx + Pxxxy + Pxxyx + Pxxyy + Pxyxx + Pxyxy + Pxyyx + Pxyyy;
+-- Qxxyy = Pxxxx - Pxxxy - Pxxyx + Pxxyy + Pxyxx - Pxyxy - Pxyyx + Pxyyy;
+-- Qxyxy = Pxxxx - Pxxxy + Pxxyx - Pxxyy - Pxyxx + Pxyxy - Pxyyx + Pxyyy;
+-- Qxyyx = Pxxxx + Pxxxy - Pxxyx - Pxxyy - Pxyxx - Pxyxy + Pxyyx + Pxyyy;
+-- Qyxxy = Pxxxx - Pxxxy + Pxxyx - Pxxyy + Pxyxx - Pxyxy + Pxyyx - Pxyyy;
+-- Qyxyx = Pxxxx + Pxxxy - Pxxyx - Pxxyy + Pxyxx + Pxyxy - Pxyyx - Pxyyy;
+-- Qyyxx = Pxxxx + Pxxxy + Pxxyx + Pxxyy - Pxyxx - Pxyxy - Pxyyx - Pxyyy;
+-- Qyyyy = Pxxxx - Pxxxy - Pxxyx + Pxxyy - Pxyxx + Pxyxy + Pxyyx - Pxyyy;
 -- Q = {Qxxxx, Qxxyy, Qxyxy, Qxyyx, Qyxxy, Qyxyx, Qyyxx, Qyyyy};
 -- g_map = map(R, Sq, Q);
 -- netList entries gens kernel g_map
@@ -175,3 +175,107 @@ linear_constraint = ideal f_sum
 (linear_constraint + PDM) == (linear_constraint + CDD) -- Expected: true
 (linear_constraint + PDM) == (linear_constraint + PDR) -- Expected: true
 (linear_constraint + PDR) == (linear_constraint + CDD) -- Expected: true
+
+
+
+-- -----------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------
+
+
+
+
+
+-- =============================================================================
+--          List of Generating sets for the 3 tree topologies
+-- =============================================================================
+
+
+
+-- -----------------------------------------------------------------------------
+-- I.  TOPOLOGY 12|34
+-- -----------------------------------------------------------------------------
+-- CDD
+-- pxxxy*pxyxx + pxxyx*pxyxx - pxxxx*pxyxy - pxxyy*pxyxy - pxxxx*pxyyx - pxxyy*pxyyx + pxxxy*pxyyy + pxxyx*pxyyy
+-- pxxxy*pxyxx - pxxyx*pxyxx - pxxxx*pxyxy + pxxyy*pxyxy + pxxxx*pxyyx - pxxyy*pxyyx - pxxxy*pxyyy + pxxyx*pxyyy
+
+-- PDM 
+-- pxxyx*pxyxx - pxxyy*pxyxy + pxxxy*pxyyx + pxxyx*pxyyx + pxxyy*pxyyx + pxyxx*pxyyx + pxyxy*pxyyx + pxyyx^2 + pxxxy*pxyyy + pxyyx*pxyyy - pxyyx
+-- pxxxy*pxyxx + pxxxy*pxyxy + pxxyx*pxyxy + pxxyy*pxyxy + pxyxx*pxyxy + pxyxy^2 - pxxyy*pxyyx + pxyxy*pxyyx + pxxyx*pxyyy + pxyxy*pxyyy - pxyxy
+
+-- CDM
+-- pxxxy*pxyxx + pxxyx*pxyxx + pxxxy*pxyxy + pxxyx*pxyxy + pxyxx*pxyxy + pxyxy^2 + pxxxy*pxyyx + pxxyx*pxyyx + pxyxx*pxyyx + 2*pxyxy*pxyyx + pxyyx^2 + pxxxy*pxyyy + pxxyx*pxyyy + pxyxy*pxyyy + pxyyx*pxyyy - pxyxy - pxyyx
+-- -pxxxy*pxyxx + pxxyx*pxyxx - pxxxy*pxyxy - pxxyx*pxyxy - 2*pxxyy*pxyxy - pxyxx*pxyxy - pxyxy^2 + pxxxy*pxyyx + pxxyx*pxyyx + 2*pxxyy*pxyyx + pxyxx*pxyyx + pxyyx^2 + pxxxy*pxyyy - pxxyx*pxyyy - pxyxy*pxyyy + pxyyx*pxyyy + pxyxy - pxyyx
+
+-- PDR
+-- pxxyx*pxyxx - pxxyy*pxyxy - pxxxx*pxyyx + pxxxy*pxyyy
+-- pxxxy*pxyxx - pxxxx*pxyxy - pxxyy*pxyyx + pxxyx*pxyyy
+
+-- CDR
+-- pxxxy*pxyxx + pxxyx*pxyxx - pxxxx*pxyxy - pxxyy*pxyxy - pxxxx*pxyyx - pxxyy*pxyyx + pxxxy*pxyyy + pxxyx*pxyyy
+-- -pxxxy*pxyxx + pxxyx*pxyxx + pxxxx*pxyxy - pxxyy*pxyxy - pxxxx*pxyyx + pxxyy*pxyyx + pxxxy*pxyyy - pxxyx*pxyyy
+
+-- Internal inequality
+-- In fourier coordinates: qyxyx*qxyxy - qyyxx*qxxyy ≤ 0 & qxyyx*qyxxy - qyyxx*qxxyy ≤ 0 => (qyxyx*qxyxy - qyyxx*qxxyy) + (qxyyx*qyxxy - qyyxx*qxxyy) ≤ 0
+-- pxxxy*pxxyx - pxxxx*pxxyy + pxxxy*pxyxx - 2pxxyx*pxyxx - pxxxx*pxyxy + 2pxxyy*pxyxy + 2pxxxx*pxyyx - pxxyy*pxyyx - pxyxy*pxyyx - 2pxxxy*pxyyy + pxxyx*pxyyy + pxyxx*pxyyy
+
+
+
+-- -----------------------------------------------------------------------------
+-- II.  TOPOLOGY 13|24
+-- -----------------------------------------------------------------------------
+
+-- CDD
+-- pxxxy*pxxyx + pxyxx*pxxyx - pxxxx*pxxyy - pxxyy*pxxyy - pxxxx*pxyyx - pxxyy*pxyyx + pxxxy*pxyyy + pxyxx*pxyyy
+-- pxxxy*pxxyx - pxyxx*pxxyx - pxxxx*pxxyy + pxxyy*pxxyy + pxxxx*pxyyx - pxxyy*pxyyx - pxxxy*pxyyy + pxyxx*pxyyy
+
+-- pDM 
+-- pxyxx*pxxyx - pxxyy*pxxyy + pxxxy*pxyyx + pxyxx*pxyyx + pxxyy*pxyyx + pxxyx*pxyyx + pxxyy*pxyyx + pxyyx^2 + pxxxy*pxyyy + pxyyx*pxyyy - pxyyx
+-- pxxxy*pxxyx + pxxxy*pxxyy + pxyxx*pxxyy + pxxyy*pxxyy + pxxyx*pxxyy + pxxyy^2 - pxxyy*pxyyx + pxxyy*pxyyx + pxyxx*pxyyy + pxxyy*pxyyy - pxxyy
+
+-- CDM
+-- pxxxy*pxxyx + pxyxx*pxxyx + pxxxy*pxxyy + pxyxx*pxxyy + pxxyx*pxxyy + pxxyy^2 + pxxxy*pxyyx + pxyxx*pxyyx + pxxyx*pxyyx + 2*pxxyy*pxyyx + pxyyx^2 + pxxxy*pxyyy + pxyxx*pxyyy + pxxyy*pxyyy + pxyyx*pxyyy - pxxyy - pxyyx
+-- -pxxxy*pxxyx + pxyxx*pxxyx - pxxxy*pxxyy - pxyxx*pxxyy - 2*pxxyy*pxxyy - pxxyx*pxxyy - pxxyy^2 + pxxxy*pxyyx + pxyxx*pxyyx + 2*pxxyy*pxyyx + pxxyx*pxyyx + pxyyx^2 + pxxxy*pxyyy - pxyxx*pxyyy - pxxyy*pxyyy + pxyyx*pxyyy + pxxyy - pxyyx
+
+-- pDR
+-- pxyxx*pxxyx - pxxyy*pxxyy - pxxxx*pxyyx + pxxxy*pxyyy
+-- pxxxy*pxxyx - pxxxx*pxxyy - pxxyy*pxyyx + pxyxx*pxyyy
+
+-- CDR
+-- pxxxy*pxxyx + pxyxx*pxxyx - pxxxx*pxxyy - pxxyy*pxxyy - pxxxx*pxyyx - pxxyy*pxyyx + pxxxy*pxyyy + pxyxx*pxyyy
+-- -pxxxy*pxxyx + pxyxx*pxxyx + pxxxx*pxxyy - pxxyy*pxxyy - pxxxx*pxyyx + pxxyy*pxyyx + pxxxy*pxyyy - pxyxx*pxyyy
+
+-- Internal inequality 
+-- In fourier coordinates: qxxyy*qyyxx - qxyxy*qyxyx ≤ 0 & qxyyx*qyxxy - qxyxy*qyxyx ≤ 0 => (qxxyy*qyyxx - qxyxy*qyxyx) + (qxyyx*qyxxy - qxyxy*qyxyx) ≤ 0
+-- pxxxy*pxyxx - pxxxx*pxxyy + pxxxy*pxxyx - 2pxyxx*pxxyx - pxxxx*pxxyy + 2pxxyy*pxxyy + 2pxxxx*pxyyx - pxxyy*pxyyx - pxxyy*pxyyx - 2pxxxy*pxyyy + pxyxx*pxyyy + pxxyx*pxyyy
+
+
+
+-- -----------------------------------------------------------------------------
+-- III.  TOPOLOGY 14|23
+-- -----------------------------------------------------------------------------
+
+
+-- CDD
+-- pxyxx*pxxxy + pxxyx*pxxxy - pxxxx*pxyxy - pxyyx*pxyxy - pxxxx*pxxyy - pxyyx*pxxyy + pxyxx*pxyyy + pxxyx*pxyyy
+-- pxyxx*pxxxy - pxxyx*pxxxy - pxxxx*pxyxy + pxyyx*pxyxy + pxxxx*pxxyy - pxyyx*pxxyy - pxyxx*pxyyy + pxxyx*pxyyy
+
+-- PDM 
+-- pxxyx*pxxxy - pxyyx*pxyxy + pxyxx*pxxyy + pxxyx*pxxyy + pxyyx*pxxyy + pxxxy*pxxyy + pxyxy*pxxyy + pxxyy^2 + pxyxx*pxyyy + pxxyy*pxyyy - pxxyy
+-- pxyxx*pxxxy + pxyxx*pxyxy + pxxyx*pxyxy + pxyyx*pxyxy + pxxxy*pxyxy + pxyxy^2 - pxyyx*pxxyy + pxyxy*pxxyy + pxxyx*pxyyy + pxyxy*pxyyy - pxyxy
+
+-- CDM
+-- pxyxx*pxxxy + pxxyx*pxxxy + pxyxx*pxyxy + pxxyx*pxyxy + pxxxy*pxyxy + pxyxy^2 + pxyxx*pxxyy + pxxyx*pxxyy + pxxxy*pxxyy + 2*pxyxy*pxxyy + pxxyy^2 + pxyxx*pxyyy + pxxyx*pxyyy + pxyxy*pxyyy + pxxyy*pxyyy - pxyxy - pxxyy
+-- -pxyxx*pxxxy + pxxyx*pxxxy - pxyxx*pxyxy - pxxyx*pxyxy - 2*pxyyx*pxyxy - pxxxy*pxyxy - pxyxy^2 + pxyxx*pxxyy + pxxyx*pxxyy + 2*pxyyx*pxxyy + pxxxy*pxxyy + pxxyy^2 + pxyxx*pxyyy - pxxyx*pxyyy - pxyxy*pxyyy + pxxyy*pxyyy + pxyxy - pxxyy
+
+-- PDR
+-- pxxyx*pxxxy - pxyyx*pxyxy - pxxxx*pxxyy + pxyxx*pxyyy
+-- pxyxx*pxxxy - pxxxx*pxyxy - pxyyx*pxxyy + pxxyx*pxyyy
+
+-- CDR
+-- pxyxx*pxxxy + pxxyx*pxxxy - pxxxx*pxyxy - pxyyx*pxyxy - pxxxx*pxxyy - pxyyx*pxxyy + pxyxx*pxyyy + pxxyx*pxyyy
+-- -pxyxx*pxxxy + pxxyx*pxxxy + pxxxx*pxyxy - pxyyx*pxyxy - pxxxx*pxxyy + pxyyx*pxxyy + pxyxx*pxyyy - pxxyx*pxyyy
+
+-- Internal inequality
+-- In fourier coordinates: qxxyy*qyyxx - qxyyx*qyxxy ≤ 0 & qxyxy*qyxyx - qxyyx*qyxxy ≤ 0 => (qxxyy*qyyxx - qxyyx*qyxxy) + (qxyxy*qyxyx - qxyyx*qyxxy) ≤ 0
+-- pxyxx*pxxyx - pxxxx*pxyyx + pxyxx*pxxxy - 2pxxyx*pxxxy - pxxxx*pxyxy + 2pxyyx*pxyxy + 2pxxxx*pxxyy - pxyyx*pxxyy - pxyxy*pxxyy - 2pxyxx*pxyyy + pxxyx*pxyyy + pxxxy*pxyyy
+
