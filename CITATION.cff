@@ -15,7 +15,7 @@ authors:
     given-names: John A.
   - family-names: Zhang
     given-names: Joy Z.
-title: "Code repository for "Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics""
+title: "Code repository for the paper: Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics"
 version: 1.0.0
 date-released: 2025-07-08
 url: "https://github.com/github-linguist/linguist"
