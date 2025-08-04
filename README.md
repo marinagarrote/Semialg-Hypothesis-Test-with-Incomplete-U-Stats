@@ -32,7 +32,7 @@ The code is based on the following files:
 
 
 ## Additional Macaulay2 code:
-* [`singular_locus_CFN.m2`](singular_locus_CFN.m2) This file can be used to compute the singular locus of the CFN model on a 4-leaf binary tree.
+* [`docs/singular_locus_CFN.m2`](docs/singular_locus_CFN.m2) This file can be used to compute the singular locus of the CFN model on a 4-leaf binary tree.
 * [`docs/generating_sets_CFN.m2`](docs/generating_sets_CFN.m2) This file contains the code presented in Appendix C.1, used to compute the 5 different constrain sets (CDD, CDM, PDM, CDR and PDR) used thoughout the paper. It also contains the list of invariants for the CFN model for the 3 tree topologies of 4-leaf binary trees.
 
 
