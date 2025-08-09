@@ -1,0 +1,21 @@
+CFN type: CFN-UM-NI----NL--- 
+
+parameter values: 
+n = 1000 
+m = 12 
+N = 1000 
+n1 = 80 
+A = 5000 
+s = 100 
+Use original constraints?  TRUE 
+r = 10 
+
+numCores = 6 6 
+min a = 0.01 
+max a = 1.21 
+Δa = 0.05 
+min b = 0.01 
+max b = 1.21 
+Δb = 0.05 
+
+runtime:  4.497477 hours
