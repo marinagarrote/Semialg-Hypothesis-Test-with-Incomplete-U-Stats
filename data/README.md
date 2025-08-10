@@ -1,7 +1,5 @@
 # data readme
 
-## collection 1
-
 Included the folder `collection-1/` is the treespace dataset `Collection 1`
 used in the CFN section of our paper. It was obtained by running the SDL
 method (30 times, for each of 5 distinct sets of polynomial constraints) to

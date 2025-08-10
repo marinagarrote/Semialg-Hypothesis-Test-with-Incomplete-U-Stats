@@ -3,13 +3,15 @@
 V.1.0 Update: July/2025
 
 This repository contains code implementing methods described in the paper:
+
+```
 [1] _Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics_, by D Barnhill, M Garrote-López, E Gross, M Hill,
 B Kagy, J A Rhodes, AND J Z Zhang, available at ...
+```
 
 A portion of the R and c++ code in this repository is adapted from the implementation in the TestGGM R package, which is available at [`github.com/NilsSturma/TestGGM`](https://github.com/NilsSturma/TestGGM). We gratefully acknowledge the authors of TestGGM for their work and allowing us to use their code.
 
 This repository includes code implemented in `R`, `C++` and `Macaulay2`.
-
 
 ## Code for hypothesis testing with incomplete U-statistics:
 The code is based on the following files:
@@ -21,19 +23,19 @@ The code is based on the following files:
 - **[`src/trinomial-models_main_SDL-test.R`](src/trinomial-models_main_SDL-test.R)** Code for running experiments for the trinomial models (see Section 3 in [1]).  
   └ **[`src/trinomial-models_utils.R`](src/trinomial-models_utils.R)**: Additional functions for generating data and plotting trinomial models.  
 
-- **[`src/main-incompleteU-statistics-CFN.R`](src/run-CFN-experiment.R)**
-  Code for running experiments using the CFN 4-leaf tree model (see Section 4 in [1]).  
-  └ **[`src/CFN-model_utils.R`](src/CFN-model_utils.R)**: Functions for creating and modifying CFN-type models.
+- **[`src/CFN-model_main_SDL-test.R`](src/CFN-model_main_SDL-test.R)**
+  Code illustrating how to run experiments using the CFN 4-leaf tree model (see Section 4 in [1]).  
+  └ **[`src/CFN-model_utils.R`](src/CFN-model_utils.R)**: Additional functions for working with the CFN model.
 
-- **[`src/plot_examles.R`](src/run-CFN-experiment.R)** 
-  Code for ploting ....  
-  └ **[`src/plot_utils.R`](src/CFN-model_utils.R)**: Additional functions for plotting.  
-  └ CFN data in **[`data/big_simulation_CFN.R`](data/big_simulation_CFN)**: Data...
+- **[`src/plot-CFN-results.R`](src/plot-CFN-results.R)** 
+  Code illustrating illustrating how to generate the p-value histograms and treespace plots in Secction 4 of [1].  
+  └ The dataset used for this is Collection 1, see **[`the data readme`](data/README.md)**:
 
 
 ## Additional Macaulay2 code:
-* [`docs/singular_locus_CFN.m2`](docs/singular_locus_CFN.m2) This file can be used to compute the singular locus of the CFN model on a 4-leaf binary tree.
-* [`docs/generating_sets_CFN.m2`](docs/generating_sets_CFN.m2) This file contains the code presented in Appendix C.1, used to compute the 5 different constrain sets (CDD, CDM, PDM, CDR and PDR) used thoughout the paper. It also contains the list of invariants for the CFN model for the 3 tree topologies of 4-leaf binary trees.
+- **[`docs/singular_locus_CFN.m2`](docs/singular_locus_CFN.m2)** This file can be used to compute the singular locus of the CFN model on a 4-leaf binary tree.
+
+- **[`docs/generating_sets_CFN.m2`](docs/generating_sets_CFN.m2)** This file contains the code presented in Appendix C.1, used to compute the 5 different constrain sets (CDD, CDM, PDM, CDR and PDR) used thoughout the paper. It also contains the list of invariants for the CFN model for the 3 tree topologies of 4-leaf binary trees.
 
 
 To discuss: Add docs/TestModels.pdf? or similar R code?
