@@ -125,11 +125,10 @@ plot_treespace <- function(data, topology, plot_title){
              main=paste0(plot_title," - ", succ), xlab='', ylab='') 
 }
 
-
 #_______________________________________________________________________________
 #
-# Examples of using the plotting functions to make histograms and treespaces
-# _______________________________________________________________________________
+# Examples of how to make histograms and treespace plots
+#_______________________________________________________________________________
 
 # First, specify the path to the data, and then read the data into an R
 # dataframe. For these examples, we'll use Collection 1 data obtained using the

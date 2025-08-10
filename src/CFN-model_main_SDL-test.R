@@ -71,6 +71,12 @@ branch_lengths = c(.2, .3, .24, .1, .17) # (can be any nonnegative numbers)
 # tree topology is "12|34" so the null hypothesis H_12 is a true null
 # hypothesis, whereas H_13 and H_13 are not.
 
+
+
+# ------------------------------------------------- #
+# ------ Generate data and compute p-values ------- #
+# ------------------------------------------------- #
+
 # Next, we generate data according to the CFN process with tree parameter
 # specified above.
 CFN_distribution = compute_CFN_distribution(branch_lengths, true_topology) 
