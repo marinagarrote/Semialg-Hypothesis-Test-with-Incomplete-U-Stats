@@ -20,7 +20,8 @@ The code is based on the following files:
   Contains the main high-level function `test_U_stat`, which runs the SDL test.  
   └ **[`src/SDL-test_functions.cpp`](src/SDL-test_functions.cpp)**: Additional C++ functions for implementing the SDL test.
 
-- **[`src/trinomial-models_main_SDL-test.R`](src/trinomial-models_main_SDL-test.R)** Code for running experiments for the trinomial models (see Section 3 in [1]).  
+- **[`src/trinomial-models_main_SDL-test.R`](src/trinomial-models_main_SDL-test.R)**
+  Code for running experiments for the trinomial models (see Section 3 in [1]).  
   └ **[`src/trinomial-models_utils.R`](src/trinomial-models_utils.R)**: Additional functions for generating data and plotting trinomial models.  
 
 - **[`src/CFN-model_main_SDL-test.R`](src/CFN-model_main_SDL-test.R)**
