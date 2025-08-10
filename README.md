@@ -4,12 +4,12 @@ V.1.0 Update: July/2025
 
 This repository contains code implementing methods described in the paper:
 
-```
-[1] _Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics_, by D Barnhill, M Garrote-López, E Gross, M Hill,
-B Kagy, J A Rhodes, AND J Z Zhang, available at ...
-```
+[1] *Methodological considerations for semialgebraic hypothesis testing with incomplete U-statistics*,  
+D. Barnhill, M. Garrote-López, E. Gross, M. Hill, B. Kagy, J. A. Rhodes, and J. Z. Zhang.  
+Available at [arxiv.org/abs/2507.13531](https://arxiv.org/abs/2507.13531).
 
-A portion of the R and c++ code in this repository is adapted from the implementation in the TestGGM R package, which is available at [`github.com/NilsSturma/TestGGM`](https://github.com/NilsSturma/TestGGM). We gratefully acknowledge the authors of TestGGM for their work and allowing us to use their code.
+
+A portion of the `R` and `C++` code in this repository is adapted from the implementation in the TestGGM R package, which is available at [`github.com/NilsSturma/TestGGM`](https://github.com/NilsSturma/TestGGM). We gratefully acknowledge the authors of TestGGM for their work and allowing us to use their code.
 
 This repository includes code implemented in `R`, `C++` and `Macaulay2`.
 
