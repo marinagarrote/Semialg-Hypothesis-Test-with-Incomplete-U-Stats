@@ -24,11 +24,11 @@ The code is based on the following files:
   └ **[`src/trinomial-models_utils.R`](src/trinomial-models_utils.R)**: Additional functions for generating data and plotting trinomial models.  
 
 - **[`src/CFN-model_main_SDL-test.R`](src/CFN-model_main_SDL-test.R)**
-  Code illustrating how to run experiments using the CFN 4-leaf tree model (see Section 4 in [1]).  
+  This file contains code for how to use the SDL test with the CFN 4-leaf tree model (see Section 4 in [1]).  
   └ **[`src/CFN-model_utils.R`](src/CFN-model_utils.R)**: Additional functions for working with the CFN model.
 
 - **[`src/plot-CFN-results.R`](src/plot-CFN-results.R)** 
-  Code illustrating illustrating how to generate the p-value histograms and treespace plots in Secction 4 of [1].  
+  This file contains code with examples illustrating how to generate the p-value histograms and treespace plots in Section 4 of [1].  
   └ The dataset used for this is Collection 1, see **[`the data readme`](data/README.md)**:
 
 
