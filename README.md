@@ -29,7 +29,7 @@ The code is based on the following files:
 
 - **[`src/plot-CFN-results.R`](src/plot-CFN-results.R)** 
   This file contains code with examples illustrating how to generate the p-value histograms and treespace plots in Section 4 of [1].  
-  └ The dataset used for this is Collection 1, see **[`the data readme`](data/README.md)**:
+  └ The dataset used for this is Collection 1, see **[`the data readme`](data/README.md)**.
 
 
 ## Additional Macaulay2 code:
