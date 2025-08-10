@@ -13,17 +13,20 @@ sourceCpp(paste0(path, "SDL-test_functions.cpp"))
 
 # ------------------------------------------------------------------------------ 
 # -------------------- Arguments of function "test_U_stat" ---------------------
-# ------------------------------------------------------------------------------ 
+# ------------------------------------------------------------------------------
+
 # model = a string identifying which model to test:
 #         - Accepted trinomial models are 'cut1', 'T1', 'cut', 'T3', and 'HW'. 
-#         - For testing CFN models, see documeentation in the file 'run-CFN-expierment.R'
+#         - For testing CFN models, see documentation in the file
+#           'CFN-model_main_SDL-test.R'
 
 # X = the data, taking the form of n row vectors. Each row vector is a standard
 #     basis vector, indicating what was observed for that data point. 
 #     - For trinomial models: rows are of the form (0,0,1), (0,1,0) and (1,0,0), 
 #       and indicate which topology was observed for a particular gene.
-#     - For CFN models, they are (0,0,0,0,0,0,0,1), ..., (1,0,0,0,0,0,0,0), and
-#       indicate the observed site pattern for a given DNA site.
+#     - For CFN models, they are (0,0,0,0,0,0,0,1), ..., (1,0,0,0,0,0,0,0),
+#       and indicate the observed site pattern for a given DNA site.
+#       For more information, see commentary in 'CFN-model_main_SDL-test.R'
 
 # m = number of arguments taken by the kernel function h. Determines the number
 #     of columns in the matrix 'indices'. Needs to be divisble by the maximum
@@ -35,24 +38,34 @@ sourceCpp(paste0(path, "SDL-test_functions.cpp"))
 #     {1,...,n}). User specified (up to a maximum of 0.7*(n choose m).)
  
 # A = the number of bootstrap replicates to use when computing the p-values.
-#     This is denoted by A in the SDL paper. It just needs to be a large number.
+#     It just needs to be a large number.
  
 # n1 = number of divide-and-conquer estimators to construct. Determines the
 #      cardinality of S1. SDL suggest using n1 = n.
 
 # num_permutations = the number of (randomly-chosen) permutations to use to
-#                     symmetrize the kernel function. If m is small, the kernel
-#                     can be fully symmetrized by taking num_permutations = m!.
-#                     If possible, we recommend doing this. 
+#                    symmetrize the kernel function. In the paper, this
+#                    quantity is denoted s. If m is small, the kernel can be
+#                    fully symmetrized by taking num_permutations = m!. If
+#                    possible, we recommend doing this.
 
-# original_constraints: A boolean flag. If `Ncc` > 0, this determines
-#                       whether to apply the original model's constraints.
-# Ncc = the number of additional inequalities to be used which are obtained by 
-#       taking random convex combinations of the user-supplied polynomial inequalities. 
-#       This is a nonnegative number.
+# original_constraints: A boolean flag, either T or F. If set to T (the
+#                       default), then the test of the null hypothesis will
+#                       use the polynomial constraints in the user-specified
+#                       generating set. On the other hand, if
+#                       original_constraints=F, then only convex combinations
+#                       of those polynomial constraints are used.
+
+# Ncc = the number of additional inequalities to be used which are obtained by
+#       taking random convex combinations of the user-supplied polynomial
+#       inequalities. This is a nonnegative number. It is denoted by r in the
+#       paper.
 
 # H_parallel: A boolean flag to enable parallel computation of the U-statistic sum.
-# G_parallel: A boolean flag to enable parallel computation of the divide-and-conquer estimates.
+
+# G_parallel: A boolean flag to enable parallel computation of the
+#             divide-and-conquer estimates.
+
 # numCores = a pair of positive integers, indiciating the number of cores to use
 #            when computing H and G, respectively. This is an optional parameter
 #            to be used if you want to parallelize the computation. We found
@@ -84,6 +97,9 @@ sourceCpp(paste0(path, "SDL-test_functions.cpp"))
 # cov_diag = a (p x p)-diagonal matrix whose entries are of the form
 #            \hat{\sigma}^{2}_{j}, which is defined on p.12 of Sturma et al.
 
+# s : see entry for num_permutations above
+
+# r : see entry for Ncc above
 
 # ------------------------------------------------------------------------------ 
 # -------------------- Main function to apply the SDL test ---------------------

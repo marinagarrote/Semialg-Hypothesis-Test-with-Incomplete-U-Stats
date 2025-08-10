@@ -2,7 +2,9 @@
 ##                    p-value histograms for tests of the CFN model.
 ##
 ##
-## How to run: copy-pase code into R session with working directiory 'src/'
+## How to run: first extract the file ../data/collection-1.zip. Then copy-paste
+## code form this file line-by-line into R session with working directiory
+## 'src/'
 ##
 ## Assumed structure of the working directory from which to run this code:
 ## ├── gitrepo/
